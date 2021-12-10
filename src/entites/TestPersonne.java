@@ -6,11 +6,20 @@ public class TestPersonne {
 
 	public static void main(String[] args) {
 		
-		AdressePostale adresseP1 = new AdressePostale(22,"rue du Château",44300,"Nantes");
-		AdressePostale adresseP2 = new AdressePostale(78,"rue du Port",85000,"les Sables d'Olonne");
+		//AdressePostale adresseP1 = new AdressePostale(22,"rue du Château",44300,"Nantes");
+		//AdressePostale adresseP2 = new AdressePostale(78,"rue du Port",85000,"les Sables d'Olonne");
 		
-		Personne personne1 = new Personne ("Dupond","Jean",adresseP1);
-		Personne personne2 = new Personne ("Guillet","Anne", adresseP2);
+		//Personne personne1 = new Personne ("Dupond","Jean",adresseP1);
+		//Personne personne2 = new Personne ("Guillet","Anne", adresseP2);
+		
+		Personne personne3 = new Personne ();
+		String resultat = personne3.SetNomPrenom("moreau","nicolas");
+		System.out.println(resultat);
+		
+		AdressePostale adresse = new AdressePostale(22,"rue du Château de la Reine",44000,"Nantes");
+		AdressePostale resultat2 = personne3.SetAdresse(adresse);
+		System.out.println(resultat2);
+		
 		
 		
 		//personne1.nom = "Dupond";
