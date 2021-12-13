@@ -24,6 +24,12 @@ public class Compte {
 	public void setSoldeCompte(float soldeCompte) {
 		this.soldeCompte = soldeCompte;
 	}
+
+	@Override
+	public String toString() {
+		return "Compte [numCompte=" + numCompte + ", soldeCompte=" + soldeCompte + "]";
+	}
+	
 	
 	
 }
