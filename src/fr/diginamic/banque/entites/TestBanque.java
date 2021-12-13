@@ -12,12 +12,14 @@ public class TestBanque {
 		CompteTaux compte2 = new CompteTaux("001R36",9458.23,2);
 		
 		for(int i=0;i<tabCompte.length;i++) {
-			if(i==0) {
-				System.out.println(compte1);
+			switch(i) {
+				case 0 :
+					System.out.println(compte1);
+					break;
+				default :
+					System.out.println(compte2);
+					break;	
 			}
-			else {
-				System.out.println(compte2);
-			}	
 		}
 		
 	}
