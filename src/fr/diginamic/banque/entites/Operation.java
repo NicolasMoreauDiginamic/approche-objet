@@ -12,7 +12,7 @@ public abstract class Operation {
 		this.montantOpe = montantOpe;
 	}
 	
-	public String getType(String type) {
+	public String getType() {
 		return type;
 	}
 	

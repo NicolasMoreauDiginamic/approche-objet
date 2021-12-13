@@ -7,33 +7,15 @@ public class TestOperation {
 		String type;
 		
 		Operation[] tabOperation = new Operation[4];
-		Credit cred1 = new Credit("04/12/2021",1250);
-		Credit cred2 = new Credit("10/12/2021",643);
-		Debit deb1 = new Debit("06/12/2021",278);
-		Debit deb2 = new Debit("08/12/2021",55);
 		
-		type = cred1.getType();
+		tabOperation[0] = new Credit("04/12/2021",1250);
+		tabOperation[1] = new Credit("10/12/2021",643);
+		tabOperation[2] = new Debit("06/12/2021",278);
+		tabOperation[3] = new Debit("08/12/2021",55);
 		
 		for(int i=0;i<tabOperation.length;i++) {
-			switch(i) {
-			case 0 :
-				type = cred1.getType();
-				System.out.println(cred1 + " "+ type);
-				break;
-			case 1 :
-				type = deb1.getType();
-				System.out.println(deb1 + " "+ type);
-				
-				break;
-			case 2 :
-				type = deb2.getType();
-				System.out.println(deb2 + " "+ type);
-				break;
-			default :
-				type = cred2.getType();
-				System.out.println(cred2 + " "+ type);
-				break;	
-			}
+			type = tabOperation[i].getType();
+			System.out.println("Date Operation : " + tabOperation[i].getDateOpe() + " Montant : " + tabOperation[i].getMontantOpe() + " Type : " + type);
 		}
 	}
 
