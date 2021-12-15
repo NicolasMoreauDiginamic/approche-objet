@@ -18,19 +18,43 @@ public class TestListeString {
 		listeVille.add("Carcassonne");
 		listeVille.add("Tarbes");
 		
+		//Recherche de la ville avec le plus grand nombre de caractére
+//		Iterator<String> iter = listeVille.iterator();
+//		Integer nombreCaracMax = 0;
+//		String nomVilleMax = "";
+//		while(iter.hasNext()) {
+//			String ville = iter.next();
+//			Integer nombreCarac = ville.length();
+//			if (nombreCaracMax < nombreCarac) {
+//				nombreCaracMax = nombreCarac;
+//				nomVilleMax = ville;
+//				
+//			}
+//					
+//		}
+//		System.out.println("Ville avec le plus de caractére : " + nomVilleMax);
+		
+		//Passer toute les villes en majuscule
+//		Iterator<String> iter = listeVille.iterator();
+//		while(iter.hasNext()){
+//			String ville = iter.next();
+//			ville = ville.toUpperCase();
+//			System.out.println(ville);
+//			
+//		}
+		
+		//Supprimer dans la liste les ville commencer par la lettre N
 		Iterator<String> iter = listeVille.iterator();
-		String ville = iter.next();
-		Integer nombreCarac = ville.length();
-		while(iter.hasNext()) {
-			String villeSuivant = iter.next();
-			Integer nombreCaracSuiv = villeSuivant.length();
-			if (nombreCarac < nombreCaracSuiv) {
-				nombreCarac = nombreCaracSuiv;
-				System.out.println(villeSuivant);
-				
+		while(iter.hasNext()){
+			String ville = iter.next();
+			char premiereLettre = ville.charAt(0);
+			String strLettre = Character.toString(premiereLettre);
+			if (strLettre.equals("N")) {
+				iter.remove();
 			}
-					
+			
 		}
+		System.out.println(listeVille);
 		
 	}
 

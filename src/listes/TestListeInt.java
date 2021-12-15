@@ -28,16 +28,16 @@ public class TestListeInt {
 		Object nombreMax = Collections.max(listeInt);
 		System.out.println("Nombre le plus grand de la liste : " + nombreMax);
 		
-		//Iterator<Integer> iter = listeInt.iterator();
-		//Integer min = iter.next();
-		//while(iter.hasNext()) {
-			//Integer nombre = iter.next();
-			//if(nombre.compareTo(min)<0) {
-				//iter.remove();
-			//}
-			
-		//}
-		//System.out.println(listeInt);
+//		Iterator<Integer> iter = listeInt.iterator();
+//		Integer min = iter.next();
+//		while(iter.hasNext()) {
+//			Integer nombre = iter.next();
+//			if(nombre.compareTo(min)<0) {
+//				iter.remove();
+//			}
+//			
+//		}
+//		System.out.println(listeInt);
 		
 		Iterator<Integer> iter2 = listeInt.iterator();
 		while(iter2.hasNext()) {
