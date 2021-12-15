@@ -9,7 +9,7 @@ public class CreationListe {
 		
 		List<Integer> list = new ArrayList<>();
 		for (int i = 0; i <100;i++) {
-			list.add(i);
+			list.add(i+1);
 		}
 		
 		System.out.println("Taille de la liste : " + list.size());
