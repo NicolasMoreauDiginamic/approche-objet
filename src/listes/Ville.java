@@ -11,6 +11,10 @@ public class Ville {
 		this.nomVille = nomVille;
 		this.nbHabitant = nbHabitant;
 	}
+	public Ville() {
+		
+	}
+	
 	public String getNomVille() {
 		return nomVille;
 	}
@@ -26,6 +30,13 @@ public class Ville {
 	@Override
 	public String toString() {
 		return "Ville [nomVille=" + nomVille + ", nbHabitant=" + nbHabitant + "]";
+	}
+	
+	public boolean equals(Object object) {
+		if(!(object instanceof Ville)) {
+			return false;
+		}
+		return true;
 	}
 	
 	
